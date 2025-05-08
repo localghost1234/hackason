@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1746560500474,
+  "timestamp": 1746726035211,
   "index": "/hackason/index.html",
   "assetGroups": [
     {
@@ -11,18 +11,18 @@
         "ignoreVary": true
       },
       "urls": [
-        "/hackason/chunk-CQONP4HZ.js",
+        "/hackason/chunk-3UVD2V3I.js",
+        "/hackason/chunk-6QWPLLCR.js",
         "/hackason/chunk-CX2TNNMO.js",
-        "/hackason/chunk-LBFXLJTR.js",
-        "/hackason/chunk-O2JLJWX5.js",
+        "/hackason/chunk-I7KWDXLC.js",
         "/hackason/chunk-USQTMXMT.js",
         "/hackason/chunk-X4ZQZ54I.js",
         "/hackason/favicon.ico",
         "/hackason/index.html",
-        "/hackason/main-KGYFQIFV.js",
+        "/hackason/main-RGDK23QB.js",
         "/hackason/manifest.webmanifest",
         "/hackason/polyfills-CXF6PVJJ.js",
-        "/hackason/styles-BEWYLTLW.css"
+        "/hackason/styles-NZC77SNU.css"
       ],
       "patterns": []
     },
@@ -50,20 +50,20 @@
         "/hackason/icons/icon-512x512.png",
         "/hackason/icons/icon-72x72.png",
         "/hackason/icons/icon-96x96.png",
-        "/hackason/images/fallback_thumbnail.png",
-        "/hackason/images/hackason_logo.png",
-        "/hackason/images/no-image.png",
-        "/hackason/images/placeholder.png"
+        "/hackason/images/default/fallback_thumbnail.png",
+        "/hackason/images/default/hackason_logo.png",
+        "/hackason/images/default/no-image.png",
+        "/hackason/images/default/user-placeholder.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/hackason/chunk-CQONP4HZ.js": "e9611552162cabd79c65e7600cbf6f7e7a9b7325",
+    "/hackason/chunk-3UVD2V3I.js": "304f7ea8c11b70bbab18c1493e771edf434665a5",
+    "/hackason/chunk-6QWPLLCR.js": "fb8fcb50f1ababd61097c320e4e60fa4a41e66bd",
     "/hackason/chunk-CX2TNNMO.js": "74d58ba5e18be64b5949f98f2b59821a38e9cd36",
-    "/hackason/chunk-LBFXLJTR.js": "dc2434f267dd99bb43f630ba09237d71909b7e0d",
-    "/hackason/chunk-O2JLJWX5.js": "345a8752bd1324985dad77074d967e1856a4cb3f",
+    "/hackason/chunk-I7KWDXLC.js": "1eb087c3e4206f22dc30a66ade724edde27f8510",
     "/hackason/chunk-USQTMXMT.js": "9cf5153421d3b2b7b218810e11322df7b351f34f",
     "/hackason/chunk-X4ZQZ54I.js": "44fdedbc88907114a4515b3e302115d9ca0a39e2",
     "/hackason/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
@@ -83,15 +83,15 @@
     "/hackason/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
     "/hackason/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
     "/hackason/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
-    "/hackason/images/fallback_thumbnail.png": "920ad2674dd02ac89f20897cab8d21533b8e1eb2",
-    "/hackason/images/hackason_logo.png": "d6069b3804038887e35a97a776c6aa2aff01e607",
-    "/hackason/images/no-image.png": "f33556a124d1fc5aebaa8b468f3698f177e624e7",
-    "/hackason/images/placeholder.png": "25df6763eeca8b50b4c12efb8a285a65c5674d88",
-    "/hackason/index.html": "dc242f51cee11a70a9712d0488e600a717ef152c",
-    "/hackason/main-KGYFQIFV.js": "f3f75afac054539293c91b35e6ce2bcf70ea1bae",
+    "/hackason/images/default/fallback_thumbnail.png": "920ad2674dd02ac89f20897cab8d21533b8e1eb2",
+    "/hackason/images/default/hackason_logo.png": "d6069b3804038887e35a97a776c6aa2aff01e607",
+    "/hackason/images/default/no-image.png": "f33556a124d1fc5aebaa8b468f3698f177e624e7",
+    "/hackason/images/default/user-placeholder.png": "25df6763eeca8b50b4c12efb8a285a65c5674d88",
+    "/hackason/index.html": "72c7a06b8eda5bb792616784a1ec9487e73f5b84",
+    "/hackason/main-RGDK23QB.js": "d0a988467fd68a5e08392e09939acae0145da181",
     "/hackason/manifest.webmanifest": "e9bdc3fd45a5b3535fb45997dd0f734c91d1f074",
     "/hackason/polyfills-CXF6PVJJ.js": "c6ed624977e3fe2496cfa7f59b4a88bddf78fde3",
-    "/hackason/styles-BEWYLTLW.css": "fc5e312f415e12e0c7559757415d01f34e6e5814"
+    "/hackason/styles-NZC77SNU.css": "a3c27ca642027a97221eb2057dd73ec3a4074d9f"
   },
   "navigationUrls": [
     {
