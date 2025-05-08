@@ -1,0 +1,115 @@
+{
+  "configVersion": 1,
+  "timestamp": 1746746537266,
+  "index": "/hackason/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/hackason/chunk-3UVD2V3I.js",
+        "/hackason/chunk-CX2TNNMO.js",
+        "/hackason/chunk-I7KWDXLC.js",
+        "/hackason/chunk-PZ5AETJL.js",
+        "/hackason/chunk-USQTMXMT.js",
+        "/hackason/chunk-X4ZQZ54I.js",
+        "/hackason/favicon.ico",
+        "/hackason/index.html",
+        "/hackason/main-365ZFJBZ.js",
+        "/hackason/manifest.webmanifest",
+        "/hackason/polyfills-IW5L22RV.js",
+        "/hackason/styles-752QAT35.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/hackason/fonts/Manrope-Bold.ttf",
+        "/hackason/fonts/Manrope-ExtraBold.ttf",
+        "/hackason/fonts/Manrope-ExtraLight.ttf",
+        "/hackason/fonts/Manrope-Light.ttf",
+        "/hackason/fonts/Manrope-Medium.ttf",
+        "/hackason/fonts/Manrope-Regular.ttf",
+        "/hackason/fonts/Manrope-SemiBold.ttf",
+        "/hackason/fonts/Manrope-VariableFont_wght.ttf",
+        "/hackason/icons/icon-128x128.png",
+        "/hackason/icons/icon-144x144.png",
+        "/hackason/icons/icon-152x152.png",
+        "/hackason/icons/icon-192x192.png",
+        "/hackason/icons/icon-384x384.png",
+        "/hackason/icons/icon-512x512.png",
+        "/hackason/icons/icon-72x72.png",
+        "/hackason/icons/icon-96x96.png",
+        "/hackason/images/default/fallback_thumbnail.png",
+        "/hackason/images/default/hackason_logo.png",
+        "/hackason/images/default/no-image.png",
+        "/hackason/images/default/user-placeholder.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/hackason/chunk-3UVD2V3I.js": "304f7ea8c11b70bbab18c1493e771edf434665a5",
+    "/hackason/chunk-CX2TNNMO.js": "74d58ba5e18be64b5949f98f2b59821a38e9cd36",
+    "/hackason/chunk-I7KWDXLC.js": "1eb087c3e4206f22dc30a66ade724edde27f8510",
+    "/hackason/chunk-PZ5AETJL.js": "1bda90ce14982436b88cb26d0371896909d2a827",
+    "/hackason/chunk-USQTMXMT.js": "9cf5153421d3b2b7b218810e11322df7b351f34f",
+    "/hackason/chunk-X4ZQZ54I.js": "44fdedbc88907114a4515b3e302115d9ca0a39e2",
+    "/hackason/favicon.ico": "9c39f434fe1261f68c5e3eefdf734630d99c5670",
+    "/hackason/fonts/Manrope-Bold.ttf": "a6b63c832d12337efb3123f47863f54472c81bf5",
+    "/hackason/fonts/Manrope-ExtraBold.ttf": "01e9f1ed4df60771240fd42f5ac9dcaf398f110b",
+    "/hackason/fonts/Manrope-ExtraLight.ttf": "03f11f0309f7f955fe90e3fdf22fee5e60bada4e",
+    "/hackason/fonts/Manrope-Light.ttf": "67a7446c44660168ed179812753b03390858aa92",
+    "/hackason/fonts/Manrope-Medium.ttf": "d62e1b2498f65ea5bc20fc5e365d19239527b419",
+    "/hackason/fonts/Manrope-Regular.ttf": "036b14064c7b90b4b200f2730981effea5e58b15",
+    "/hackason/fonts/Manrope-SemiBold.ttf": "e423e112f4832916b05308934c10aa84fd14c607",
+    "/hackason/fonts/Manrope-VariableFont_wght.ttf": "1b4df48059f89147cf4f2e29d2d6a22ce1b6e7fe",
+    "/hackason/icons/icon-128x128.png": "f912963bdc6d5a38d8f1dd0afbaab2ce8d657acb",
+    "/hackason/icons/icon-144x144.png": "b155fd5f2fd5d2ea7760721063003c4cd95fd783",
+    "/hackason/icons/icon-152x152.png": "eae6e0f0c8afb8aaae339e2a569b43e9238e5e6c",
+    "/hackason/icons/icon-192x192.png": "15c4180454633880d98674aa7394656196c91584",
+    "/hackason/icons/icon-384x384.png": "94a915751ef6c9282df9aea405ad679230631814",
+    "/hackason/icons/icon-512x512.png": "1de182f76f7329dfa8f9fcdd1fdcdd695bea6a99",
+    "/hackason/icons/icon-72x72.png": "aa88a6096bd973be7f6d7a5489bfa6bc2463f8c4",
+    "/hackason/icons/icon-96x96.png": "7fb8f59c30ce2ff12c700321a0b39e14b3dc8f95",
+    "/hackason/images/default/fallback_thumbnail.png": "920ad2674dd02ac89f20897cab8d21533b8e1eb2",
+    "/hackason/images/default/hackason_logo.png": "d6069b3804038887e35a97a776c6aa2aff01e607",
+    "/hackason/images/default/no-image.png": "f33556a124d1fc5aebaa8b468f3698f177e624e7",
+    "/hackason/images/default/user-placeholder.png": "25df6763eeca8b50b4c12efb8a285a65c5674d88",
+    "/hackason/index.html": "c753282367b6d53fcd063fc295f03e77338d07fd",
+    "/hackason/main-365ZFJBZ.js": "7418476f502095735c6996e399002587dd8f3e9c",
+    "/hackason/manifest.webmanifest": "41298ec6d0cc97dcc3a18ae5b428f7583028cd1c",
+    "/hackason/polyfills-IW5L22RV.js": "1dadb5827381af004a1091d8067e1c2cff343845",
+    "/hackason/styles-752QAT35.css": "5ce98a9c54db5bfa46bfb6ef938557d11a5be142"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
