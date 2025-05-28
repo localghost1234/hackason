@@ -7,7 +7,7 @@ import { Challenge } from '../interfaces/pages.interface';
   providedIn: 'root',
 })
 export class ChallengesService {
-  private apiUrl = 'http://localhost:8080/api/challenges'; // Replace with your API endpoint
+  private apiUrl = 'http://localhost:8080/api/challenges';
 
   constructor(private http: HttpClient) {}
 
@@ -15,7 +15,7 @@ export class ChallengesService {
     return this.http.get<Challenge[]>(this.apiUrl).pipe(
       catchError((error) => {
         console.error('Failed to fetch challenges:', error);
-        return of([]); // Fallback empty array (or use mock data as backup)
+        return of([]);
       }),
     );
   }
