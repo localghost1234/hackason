@@ -13,7 +13,6 @@ export class ChallengesService {
 
   getChallenges(): Observable<Challenge[]> {
     return this.http.get<Challenge[]>(this.apiUrl).pipe(
-      tap((data) => console.log('Received data:', data)),
       catchError((error) => {
         console.error('Failed to fetch challenges:', error);
         return of([]); // Fallback empty array (or use mock data as backup)

@@ -5,7 +5,6 @@ import { Challenge } from '@app/@core/interfaces/pages.interface';
 import { ChallengesService } from '@app/@core/services/challenges.service';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
-import { DomSanitizer } from '@angular/platform-browser';
 import { BehaviorSubject, combineLatest, map, Observable } from 'rxjs';
 
 @Component({
@@ -23,10 +22,7 @@ export class ChallengesComponent {
   difficultyLevels = ['Beginner', 'Medium', 'Advanced'];
   activeChallenge: Challenge | null = null;
 
-  constructor(
-    private challengesService: ChallengesService,
-    private sanitizer: DomSanitizer,
-  ) {}
+  constructor(private challengesService: ChallengesService) {}
 
   ngOnInit(): void {
     this.challenges$ = this.challengesService.getChallenges();
@@ -53,9 +49,5 @@ export class ChallengesComponent {
   closeVM() {
     this.activeChallenge = null;
     document.body.style.overflow = '';
-  }
-
-  safeUrl(url: string) {
-    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
   }
 }

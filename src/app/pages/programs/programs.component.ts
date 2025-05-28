@@ -20,11 +20,13 @@ import { animate, style, transition, trigger } from '@angular/animations';
   ],
 })
 export class ProgramsComponent {
-  searchQuery = '';
   programs$: Observable<Program[]>;
+  searchQuery = '';
   selectedProgram: Program | null = null;
 
-  constructor(private programsService: ProgramsService) {
+  constructor(private programsService: ProgramsService) {}
+
+  ngOnInit(): void {
     this.programs$ = this.programsService.getPrograms();
   }
 

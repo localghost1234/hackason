@@ -52,7 +52,7 @@
     </div>
 
     <ng-container *ngIf="activeChallenge.vmUrl; else noVm">
-      <iframe [src]="safeUrl(activeChallenge.vmUrl)" sandbox="allow-scripts allow-same-origin" class="vm-frame"> </iframe>
+      <iframe [src]="activeChallenge.vmUrl" sandbox="allow-scripts allow-same-origin" class="vm-frame"> </iframe>
     </ng-container>
 
     <ng-template #noVm>
