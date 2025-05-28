@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { Challenge, Tournament } from '@app/@core/interfaces/pages.interface';
+import { Challenge } from '@app/@core/interfaces/pages.interface';
 import { ChallengesService } from '@app/@core/services/challenges.service';
 import { FormsModule } from '@angular/forms';
 import { TranslateModule } from '@ngx-translate/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { map, Observable } from 'rxjs';
+import { BehaviorSubject, combineLatest, map, Observable } from 'rxjs';
 
 @Component({
   selector: 'app-challenges',
@@ -16,31 +16,29 @@ import { map, Observable } from 'rxjs';
   styleUrls: ['./challenges.component.scss'],
 })
 export class ChallengesComponent {
-  // View Management
-  isListView = false;
-  selectedDifficulty = 'all';
-  difficultyLevels = ['Beginner', 'Medium', 'Advanced'];
-
-  // Data Streams
   challenges$: Observable<Challenge[]>;
-  tournaments$: Observable<Tournament[]>;
-
-  // VM State
+  filteredChallenges$: Observable<Challenge[]>;
+  selectedDifficulty$ = new BehaviorSubject<string>('all');
+  isListView = false;
+  difficultyLevels = ['Beginner', 'Medium', 'Advanced'];
   activeChallenge: Challenge | null = null;
-  activeTournament$: Observable<Tournament | undefined>;
 
   constructor(
     private challengesService: ChallengesService,
     private sanitizer: DomSanitizer,
-  ) {
-    this.challenges$ = this.challengesService.getChallenges();
-    this.tournaments$ = this.challengesService.getTournaments();
+  ) {}
 
-    this.activeTournament$ = this.tournaments$.pipe(map((tournaments) => tournaments.find((t) => new Date() >= t.startDate && new Date() <= t.endDate)));
+  ngOnInit(): void {
+    this.challenges$ = this.challengesService.getChallenges();
+
+    this.filteredChallenges$ = combineLatest([
+      this.challenges$, // emits once with challenge list
+      this.selectedDifficulty$, // emits every time user selects a new difficulty
+    ]).pipe(map(([challenges, selected]) => challenges.filter((ch) => selected === 'all' || ch.difficulty === selected)));
   }
 
-  get filteredChallenges$() {
-    return this.challenges$.pipe(map((challenges) => challenges.filter((ch) => this.selectedDifficulty === 'all' || ch.difficulty === this.selectedDifficulty)));
+  onDifficultyChange(value: string) {
+    this.selectedDifficulty$.next(value);
   }
 
   toggleViewMode() {

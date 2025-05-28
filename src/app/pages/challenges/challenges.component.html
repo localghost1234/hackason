@@ -9,7 +9,7 @@
     <!-- View Controls -->
     <div class="challenges-controls">
       <div class="difficulty-filter">
-        <select [(ngModel)]="selectedDifficulty">
+        <select [ngModel]="selectedDifficulty$ | async" (ngModelChange)="onDifficultyChange($event)">
           <option value="all">{{ 'All Difficulties' | translate }}</option>
           <option *ngFor="let level of difficultyLevels" [value]="level">
             {{ level | translate }}

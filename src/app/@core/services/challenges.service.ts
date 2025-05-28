@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, catchError, of } from 'rxjs';
+import { Observable, catchError, of, tap } from 'rxjs';
 import { Challenge } from '../interfaces/pages.interface';
 
 @Injectable({
@@ -13,6 +13,7 @@ export class ChallengesService {
 
   getChallenges(): Observable<Challenge[]> {
     return this.http.get<Challenge[]>(this.apiUrl).pipe(
+      tap((data) => console.log('Received data:', data)),
       catchError((error) => {
         console.error('Failed to fetch challenges:', error);
         return of([]); // Fallback empty array (or use mock data as backup)
