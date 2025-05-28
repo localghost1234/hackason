@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-
 import { environment } from '@env/environment';
 import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
 import { AuthenticationService } from '@app/auth';
@@ -32,17 +31,15 @@ export class LoginComponent {
       .pipe(untilDestroyed(this))
       .subscribe({
         next: (res) => {
-          // Navigate to the home page or any other page after successful login.
           if (res) {
             console.log('Login successful');
             this._router.navigate([this._route.snapshot.queryParams['redirect'] || '/discover'], { replaceUrl: true }).then(() => {
-              // Handle the navigation
               console.log('Navigated to Discover');
             });
           }
         },
-        error: (error) => {
-          // Handle the error here
+        error: (err) => {
+          console.error('Login error:', err);
         },
       });
   }

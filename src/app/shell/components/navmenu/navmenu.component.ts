@@ -23,13 +23,12 @@ export class NavMenuComponent implements OnInit {
 
   constructor(
     private readonly _router: Router,
-    private readonly _credentialsService: CredentialsService,
+    public readonly credentialsService: CredentialsService,
     public shellService: ShellService,
-  ) {
-    this.navMenuItems = webNavMenuItems;
-  }
+  ) {}
 
   ngOnInit(): void {
+    this.navMenuItems = webNavMenuItems;
     this.shellService.activeNavTab(this.navMenuItems, this.navMenuExtendedItem);
 
     this._router.events
