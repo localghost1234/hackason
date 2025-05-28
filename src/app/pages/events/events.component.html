@@ -26,48 +26,13 @@
       <div class="card-detail">
         <div class="icon">📍</div>
         <h3>Location</h3>
-        <p>TecNM Campus Obregón<br />Salón de Eventos</p>
+        <p>Itson -- Campus Nainari<br />Salón de Eventos</p>
       </div>
       <div class="card-detail">
         <div class="icon">🎯</div>
         <h3>Format</h3>
         <p>CTF Competition<br />Web App Testing<br />Live Challenges</p>
       </div>
-    </div>
-  </section>
-
-  <!-- Challenge Preview Panel -->
-  <section class="panel challenge-panel">
-    <h2>Sample Challenge</h2>
-    <div class="challenge-box">
-      <p>Can you exploit this vulnerable API endpoint?</p>
-      <pre><code>
-  // Vulnerable endpoint
-  app.get('/api/user', (req, res) => &lbrace;
-    const userId = req.query.id;
-    const query = `SELECT * FROM users WHERE id = $&lbrace;userId&rbrace;`;
-    db.query(query, (err, result) => res.json(result));
-&rbrace;);
-      </code></pre>
-      <div class="hint" *ngIf="!showAnswer">
-        <p>Hint: What's wrong with how the query is constructed?</p>
-      </div>
-      <div class="answer-toggle" (click)="showAnswer = !showAnswer">
-        <span *ngIf="showAnswer">Hide Answer</span>
-        <span *ngIf="!showAnswer">Reveal Answer</span>
-      </div>
-      <div class="answer" *ngIf="showAnswer">
-        <p>🚨 Critical vulnerabilities:</p>
-        <ul>
-          <li>SQL Injection (direct query concatenation)</li>
-          <li>No input validation/sanitization</li>
-          <li>Excessive data exposure (returns all columns)</li>
-        </ul>
-        <p>This is why parameterized queries are essential!</p>
-      </div>
-    </div>
-    <div class="cta-button">
-      <button routerLink="/rules" class="button learn-more">See Full Rules</button>
     </div>
   </section>
 
